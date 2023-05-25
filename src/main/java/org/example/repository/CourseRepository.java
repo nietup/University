@@ -5,6 +5,6 @@ import org.example.model.Course;
 import java.util.Optional;
 
 public interface CourseRepository {
-    Optional<Course> findByClassId(final Integer classId);
+    Optional<Course> findByCourseId(final Integer courseId);
     void save(final Course course);
 }

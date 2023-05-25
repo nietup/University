@@ -20,8 +20,8 @@ public class StudentService {
         this.studentRepository = studentRepository;
     }
 
-    void enroll(final Integer studentId, final Integer classId) {
-        final Course course = courseRepository.findByClassId(classId).orElseThrow(EntityNotFoundException::new);
+    void enroll(final Integer studentId, final Integer courseId) {
+        final Course course = courseRepository.findByCourseId(courseId).orElseThrow(EntityNotFoundException::new);
         int numberOfEnrolled = course.getEnrolledStudents().size();
 
         if (numberOfEnrolled < course.getCapacity()) {
