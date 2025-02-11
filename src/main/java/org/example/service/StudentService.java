@@ -33,11 +33,4 @@ public class StudentService {
         }
 
     }
-
-    // USEFUL
-    private List<Student> getStudentsSortedByGradeAverage(final Set<Student> studentSet) {
-        final List<Student> students = new ArrayList<>(studentSet);
-        students.sort((s1, s2) -> (int) (s1.getGradeAverage() - s2.getGradeAverage()));
-        return students;
-    }
 }
