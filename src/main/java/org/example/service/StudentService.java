@@ -6,10 +6,6 @@ import org.example.model.Student;
 import org.example.repository.CourseRepository;
 import org.example.repository.StudentRepository;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-
 public class StudentService {
 
     private final CourseRepository courseRepository;
